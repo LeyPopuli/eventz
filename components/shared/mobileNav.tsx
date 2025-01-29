@@ -11,10 +11,10 @@ export const MobileNav = () => {
                     <Image src={"/assets/icons/menu.svg"} width={24} height={24} alt="menu" className="cursor-pointer mt-0.5" />
                 </SheetTrigger>
                 <SheetTitle>
-                    <SheetContent className="flex flex-col gap-3 bg-white md:hidden">
+                    <SheetContent className="flex flex-col gap-2 bg-white md:hidden">
                         <SheetDescription className="hidden">
                         </SheetDescription>
-                        <Image src={"/assets/images/logo_title.png"} width={100} height={100} alt="logo"></Image>
+                        <Image src={"/assets/images/logo_title.png"} width={130} height={100} alt="logo"></Image>
                         <Separator className="border border-gray-50" />
                         <NavItems />
                     </SheetContent>

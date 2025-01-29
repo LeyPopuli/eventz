@@ -26,7 +26,7 @@ export default function Home() {
               className="max-h-[70vh] object-center 2xl:max-h-[50vh] object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+              <p className="text-3xl font-bold px-4 py-2 rounded-lg">
                 IMAGEN DEL EVENTO
               </p>
             </div>

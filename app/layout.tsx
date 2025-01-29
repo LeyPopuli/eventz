@@ -11,8 +11,8 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "ArcanEvents",
-  description: "ArcanEvents is an app for events management",
+  title: "EventZ",
+  description: "EventZ is an app for events management",
   icons: {
     icon: "/favicon.ico",
   },

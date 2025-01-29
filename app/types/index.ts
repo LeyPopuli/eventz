@@ -18,15 +18,16 @@ export type CreateUserParams = {
     userId: string
     event: {
       title: string
-      description: string
-      location: string
-      imageUrl: string
+      description?: string
+      site?: string
+      imageUrl?: string
+      organizer?: string
       startDateTime: Date
       endDateTime: Date
-      categoryId: string
-      price: string
-      isFree: boolean
-      url: string
+      categoryId?: string
+      url?: string
+      minAssistance?: number
+      maxAssistance?: number
     }
     path: string
   }

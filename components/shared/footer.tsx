@@ -9,7 +9,7 @@ export const Footer = () => {
                 <Image src={"/assets/images/logo_title.png"} width={150} height={100} alt="logo"></Image>
                 </Link>
                 <p>
-                    2025 ArcanEvents. Todos los derechos reservados.
+                    2025 EventZ. Todos los derechos reservados.
                 </p>
             </div>
         </footer>

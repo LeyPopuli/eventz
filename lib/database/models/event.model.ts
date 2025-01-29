@@ -15,6 +15,8 @@ export interface IEvent extends Document {
     url?: string;
     active: boolean;
     category?: {_id: string, name: string};
+    minAssistance?: number;
+    maxAssistance?: number;
   }
 
 const EventSchema = new Schema({
@@ -22,6 +24,7 @@ const EventSchema = new Schema({
    description: {type: String},
    site: {type: String},
    imageUrl: {type: String},
+   organizer: {type: String},
    createdBy: {type: Schema.Types.ObjectId, ref: "User", required: true},
    createdAt: {type: Date, default: Date.now},
    updatedBy: {type: Schema.Types.ObjectId, ref: "User"},
@@ -31,6 +34,8 @@ const EventSchema = new Schema({
    url: {type: String},
    active: {type: Boolean, default: true},
    category: {type: Schema.Types.ObjectId, ref: "Category"},
+   minAssistance: {type: Number},
+   maxAssistance: {type: Number},
 }); 
 
 const Event = models?.Event || model("Event", EventSchema);
