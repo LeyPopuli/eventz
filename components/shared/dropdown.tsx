@@ -25,15 +25,19 @@ import { createCategory, getAllCategories } from "@/lib/actions/category.actions
 type DropdownProps = {
     value?: string
     onChange?: () => void
+    userId: string
 }
 
-const Dropdown = ({ value, onChange }: DropdownProps) => {
+const Dropdown = ({ value, onChange , userId}: DropdownProps) => {
     const [categories, setCategories] = useState<ICategory[]>([])
     const [newCategory, setNewCategory] = useState('');
 
     const handleAddCategory = () => {
         createCategory({
-            categoryName: newCategory.trim()
+            category: {
+                name: newCategory.trim()
+            },
+            userId: userId
         })
             .then((category) => {
                 setCategories((prevState) => [...prevState, category])

@@ -13,6 +13,13 @@ export type CreateUserParams = {
     username: string
     photo: string
   }
+
+  export type CreateCategoryParams = {
+    category: {
+      name: string
+    }
+    userId: string
+  }
   
   export type CreateEventParams = {
     userId: string
@@ -95,10 +102,6 @@ export type CreateUserParams = {
       _id: string
       name: string
     }
-  }
-  
-  export type CreateCategoryParams = {
-    categoryName: string
   }
   
   export type UrlQueryParams = {

@@ -34,10 +34,9 @@ const EventForm = ({ userId, type }: { userId: string, type: string }) => {
     defaultValues: initialValues
   })
 
+  
   async function onSubmit(values: z.infer<typeof eventFormSchema>) {
     const eventData = values;
-
-    console.log(eventData);
 
     if (type === "create") {
       try{
@@ -80,7 +79,7 @@ const EventForm = ({ userId, type }: { userId: string, type: string }) => {
               <FormItem className="w-full">
                 <FormLabel>Etiqueta</FormLabel>
                 <FormControl>
-                  <Dropdown onChange={field.onChange} value={field.value} />
+                  <Dropdown userId={userId} onChange={field.onChange} value={field.value} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
